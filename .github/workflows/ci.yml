@@ -27,7 +27,7 @@ jobs:
         uses: 2m/arch-pkgbuild-builder@v1.16
         with:
           target: 'run'
-          pkgname: 'clover-efi'
+          pkgname: 'opencore-efi'
           command: 'pacman -Q | grep opencore-efi'
 
       - name: yaml-lint
