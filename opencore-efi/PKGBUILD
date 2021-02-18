@@ -2,7 +2,7 @@
 
 pkgname=opencore-efi
 pkgver=0.6.6
-pkgrel=2
+pkgrel=3
 _mode='RELEASE'
 # _mode='DEBUG'
 pkgdesc='OpenCore bootloader to provide supplemental functionality for Apple-specific UEFI drivers'
@@ -14,7 +14,7 @@ sha256sums=('c22f34f594d5c29b991d25dfc2075de523432ffa91588c2216e4b8963c7a8f74')
 
 package(){
   install -d "$pkgdir/boot/EFI"
-  cp -a "$srcdir/EFI/OC" "$pkgdir/boot/EFI/"
+  cp -a "$srcdir/X64/EFI/OC" "$pkgdir/boot/EFI/"
 
   install -D "$srcdir/EFI/BOOT/BOOTx64.efi" "$pkgdir/usr/lib/$pkgname/EFI/BOOT/BOOTx64.efi"
 
