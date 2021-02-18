@@ -16,7 +16,7 @@ package(){
   install -d "$pkgdir/boot/EFI"
   cp -a "$srcdir/X64/EFI/OC" "$pkgdir/boot/EFI/"
 
-  install -D "$srcdir/EFI/BOOT/BOOTx64.efi" "$pkgdir/usr/lib/$pkgname/EFI/BOOT/BOOTx64.efi"
+  install -D "$srcdir/X64/EFI/BOOT/BOOTx64.efi" "$pkgdir/usr/lib/$pkgname/EFI/BOOT/BOOTx64.efi"
 
   install -d "$pkgdir/usr/share/doc"
   cp -a "$srcdir/Docs" "$pkgdir/usr/share/doc/$pkgname"
