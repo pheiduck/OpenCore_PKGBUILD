@@ -1,8 +1,8 @@
 # Maintainer: pheiduck <pheiduck@github.com>
 
 pkgname=opencore-efi
-pkgver=0.6.6
-pkgrel=17 #Version 0.6.7 use the number of commits to master since this release
+pkgver=0.6.7
+pkgrel=0 #use the number of commits to master since this release
 _mode='RELEASE'
 # _mode='DEBUG'
 pkgdesc='OpenCore bootloader to provide supplemental functionality for Apple-specific UEFI drivers'
