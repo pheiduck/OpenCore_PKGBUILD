@@ -2,12 +2,12 @@
 
 pkgname=opencore-efi
 pkgver=0.6.7
-pkgrel=87 #use the number of commits to master since this release
+pkgrel=89 #use the number of commits to master since this release
 _mode='RELEASE'
 # _mode='DEBUG'
 pkgdesc='OpenCore bootloader to provide supplemental functionality for Apple-specific UEFI drivers'
 url='https://github.com/acidanthera/OpenCorePkg'
-_gitcommit=3d9d43b25d0ee3b893470b1b97c8c62cae9f7356
+_gitcommit=b7ba490e1f057fe9383790a60d2c0e85a94705ae
 arch=('x86_64')
 license=('BSD')
 conflicts=('refind' 'clover-efi')
