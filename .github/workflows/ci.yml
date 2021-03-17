@@ -28,10 +28,9 @@ jobs:
         with:
           target: 'run'
           pkgname: 'opencore-efi'
-          command: 'pacman -Q | grep opencore-efi && ls -la /boot/EFI && sudo pacman -Rcns opencore-efi --noconfirm'
+          command: 'pacman -Q | grep opencore-efi sudo pacman -Rcns opencore-efi --noconfirm'
 
       - name: yaml-lint
         uses: ibiqlik/action-yamllint@v3.0.0
         with:
           file_or_dir: .github/workflows/ci.yml
-          config_data: "{extends: default, rules: {new-line-at-end-of-file: disable}}"
