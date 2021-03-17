@@ -28,7 +28,7 @@ jobs:
         with:
           target: 'run'
           pkgname: 'opencore-efi'
-          command: 'pacman -Q | grep opencore-efi'
+          command: 'pacman -Q | grep opencore-efi && ls /boot/'
 
       - name: yaml-lint
         uses: ibiqlik/action-yamllint@v3.0.0
