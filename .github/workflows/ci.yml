@@ -9,7 +9,7 @@ on:  # yamllint disable-line rule:truthy
 
 jobs:
   validation:
-    runs-on: ubuntu-20.04
+    runs-on: ubuntu-latest
     name: Validate a Pull Request
     steps:
       - uses: actions/checkout@v2.3.4
@@ -31,6 +31,6 @@ jobs:
           command: 'pacman -Q | grep opencore-efi'
 
       - name: yaml-lint
-        uses: ibiqlik/action-yamllint@v3.0.0
+        uses: ibiqlik/action-yamllint@v3.0.1
         with:
           file_or_dir: .github/workflows/ci.yml
