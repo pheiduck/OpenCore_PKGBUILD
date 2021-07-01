@@ -2,7 +2,7 @@
 
 pkgname=opencore-efi
 pkgver=0.7.0
-pkgrel=64 #use the number of commits to main since this release
+pkgrel=65 #use the number of commits to main since this release
 _mode='RELEASE'
 # _mode='DEBUG'
 pkgdesc='OpenCore bootloader to provide supplemental functionality for Apple-specific UEFI drivers'
